@@ -5,7 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Condicional</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* Ensure the body takes at least the full viewport height */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            /* Optional: Set a default font */
+        }
+    </style>
 </head>
+
 
 <body>
     <?php
@@ -64,13 +77,12 @@
         }
     } else {
         // Mostrar el formulario inicial
-        echo '<h1>Pregunta 1: ¿Perro o Gato?</h1>';
+        echo '<h1>Do you have a dog or a cat?</h1>';
         echo '<form action="index.php" method="POST">';
-        echo '<label for="animal">¿Qué mascota tienes?</label><br>';
         echo '<input type="radio" id="perro" name="animal" value="perro">';
-        echo '<label for="perro"><img src="perro.jpg" alt="Perro" style="width:100px;"></label><br>';
+        echo '<label for="perro"><img src="/img/perro.png" alt="Perro" style="width:100px;"></label><br>';
         echo '<input type="radio" id="gato" name="animal" value="gato">';
-        echo '<label for="gato"><img src="gato.jpg" alt="Gato" style="width:100px;"></label><br>';
+        echo '<label for="gato"><img src="/img/gato.png" alt="Gato" style="width:100px;"></label><br>';
         echo '<input type="submit" value="Enviar">';
         echo '</form>';
     }
