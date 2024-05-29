@@ -124,19 +124,11 @@
             font-weight: 900;
         }
 
-        .nombreDueño span,
-        .nombreMascota span {
-            color: #eb8915;
-            font-weight: 900;
-            font-size: 30px;
-            margin-right: 10px;
-        }
-
         .nombreDueñoInput,
         .nombreMascotaInput {
             color: #003546;
             font-size: 30px;
-            font-weight: 900;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -186,7 +178,7 @@
                 echo '<label for="nombre_dueño" class="nombreDueño">what´s your name?</label><br>';
                 echo '<div class="nombreDueñoInput"><span>My name is</span>';
                 echo '<input type="text" id="nombre_dueño" name="nombre_dueño" required></div>';
-                echo '<label for="nombre_dueño" class="nombreDueño">And your pet´s is?</label><br>';
+                echo '<label for="nombre_dueño" class="nombreDueño">And your pet´s?</label><br>';
                 echo '<div class="nombreMascotaInput"><span>She is or He is</span>';
                 echo '<input type="text" id="nombre_mascota" name="nombre_mascota" required></div>';
                 echo '<input type="submit" class="boton_form" value="Send">';
