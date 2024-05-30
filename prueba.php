@@ -133,7 +133,7 @@
         }
 
         .size-label {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: bold;
             color: #003546;
             margin-top: 10px;
@@ -268,7 +268,7 @@
         echo '</div>';
         echo '<div>';
         echo '<input type="radio" id="perro" name="animal" value="perro">';
-        echo '<label for="perro"><img src="/img/perro.png" alt="Perro">Dog</label>';
+        echo '<label for="perro"><img src="/img/perro.png" alt="Perro"></label>';
         echo '</div>';
         echo '</div>';
         echo '<input type="submit" class="boton_form" value="Send">';
