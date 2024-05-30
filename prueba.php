@@ -48,7 +48,8 @@
             padding: 10px;
         }
 
-        .cantidad_gatos {
+        .cantidad_gatos,
+        .cantidad_perros {
             margin-bottom: 20px;
             font-size: 18px;
             padding: 10px;
@@ -145,26 +146,55 @@
         } elseif (isset($_POST['animal'])) {
             $animal = $_POST['animal'];
 
-            if ($animal == 'perro' && !isset($_POST['tamaño'])) {
-                echo '<div class="container">';
-                echo '<h1 class="titulo">What is the size of your dog?</h1>';
-                echo '<form action="index.php" method="POST">';
-                echo '<div class="sizes">';
-                echo '<input type="radio" id="pequeño" name="tamaño" value="pequeño">';
-                echo '<label for="pequeño"><img src="/img/small.png" alt="Perro Pequeño"></label>';
-                echo '<input type="radio" id="mediano" name="tamaño" value="mediano">';
-                echo '<label for="mediano"><img src="/img/mediano.png" alt="Perro Mediano"></label>';
-                echo '<input type="radio" id="grande" name="tamaño" value="grande">';
-                echo '<label for="grande"><img src="/img/big.png" alt="Perro Grande"></label>';
-                echo '</div>';
-                echo '<input type="submit" class="boton_form" value="Send">';
-                echo '<input type="hidden" name="animal" value="perro">';
-                echo '</form>';
-                echo '</div>';
+            if ($animal == 'perro') {
+                if (!isset($_POST['cantidad_perros'])) {
+                    echo '<div class="container">';
+                    echo '<h1 class="titulo">How many dogs do you have?</h1>';
+                    echo '<img src="/img/perro.png" alt="Perro" style="width:180px; margin-bottom: 20px;">';
+                    echo '<form action="index.php" method="POST">';
+                    echo '<input type="number" id="cantidad_perros" class="cantidad_perros" name="cantidad_perros" min="1" max="10"><br>';
+                    echo '<input type="submit" class="boton_form" value="Send">';
+                    echo '<input type="hidden" name="animal" value="perro">';
+                    echo '</form>';
+                    echo '</div>';
+                } elseif (!isset($_POST['tamaño'])) {
+                    echo '<div class="container">';
+                    echo '<h1 class="titulo">What is the size of your dog?</h1>';
+                    echo '<form action="index.php" method="POST">';
+                    echo '<div class="sizes">';
+                    echo '<input type="radio" id="pequeño" name="tamaño" value="pequeño">';
+                    echo '<label for="pequeño"><img src="/img/small.png" alt="Perro Pequeño"></label>';
+                    echo '<input type="radio" id="mediano" name="tamaño" value="mediano">';
+                    echo '<label for="mediano"><img src="/img/mediano.png" alt="Perro Mediano"></label>';
+                    echo '<input type="radio" id="grande" name="tamaño" value="grande">';
+                    echo '<label for="grande"><img src="/img/big.png" alt="Perro Grande"></label>';
+                    echo '</div>';
+                    echo '<input type="submit" class="boton_form" value="Send">';
+                    echo '<input type="hidden" name="animal" value="perro">';
+                    echo '<input type="hidden" name="cantidad_perros" value="' . $_POST['cantidad_perros'] . '">';
+                    echo '</form>';
+                    echo '</div>';
+                } elseif (!isset($_POST['nombre_dueño']) && !isset($_POST['nombre_mascota'])) {
+                    echo '<div class="container">';
+                    echo '<h1 class="titulo">Almost finished, </h1>';
+                    echo '<form action="index.php" method="POST">';
+                    echo '<label for="nombre_dueño" class="nombreDueño">What´s your name?</label><br>';
+                    echo '<div class="nombreDueñoInput"><span>My name is</span>';
+                    echo '<input type="text" id="nombre_dueño" name="nombre_dueño" required></div>';
+                    echo '<label for="nombre_dueño" class="nombreDueño">And your pet´s?</label><br>';
+                    echo '<div class="nombreMascotaInput"><span>She is or He is</span>';
+                    echo '<input type="text" id="nombre_mascota" name="nombre_mascota" required></div>';
+                    echo '<input type="submit" class="boton_form" value="Send">';
+                    echo '<input type="hidden" name="animal" value="' . $animal . '">';
+                    echo '<input type="hidden" name="cantidad_perros" value="' . $_POST['cantidad_perros'] . '">';
+                    echo '<input type="hidden" name="tamaño" value="' . $_POST['tamaño'] . '">';
+                    echo '</form>';
+                    echo '</div>';
+                }
             } elseif ($animal == 'gato' && !isset($_POST['cantidad_gatos'])) {
                 echo '<div class="container">';
                 echo '<h1 class="titulo">How many cats do you have?</h1>';
-                echo '<img src="/img/gato.png" alt="" style="width:180px; margin-bottom: 20px;">'; // Imagen añadida
+                echo '<img src="/img/gato.png" alt="Gato" style="width:180px; margin-bottom: 20px;">';
                 echo '<form action="index.php" method="POST">';
                 echo '<input type="number" id="cantidad_gatos" class="cantidad_gatos" name="cantidad_gatos" min="1" max="10"><br>';
                 echo '<input type="submit" class="boton_form" value="Send">';
@@ -175,7 +205,7 @@
                 echo '<div class="container">';
                 echo '<h1 class="titulo">Almost finished, </h1>';
                 echo '<form action="index.php" method="POST">';
-                echo '<label for="nombre_dueño" class="nombreDueño">what´s your name?</label><br>';
+                echo '<label for="nombre_dueño" class="nombreDueño">What´s your name?</label><br>';
                 echo '<div class="nombreDueñoInput"><span>My name is</span>';
                 echo '<input type="text" id="nombre_dueño" name="nombre_dueño" required></div>';
                 echo '<label for="nombre_dueño" class="nombreDueño">And your pet´s?</label><br>';
