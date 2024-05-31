@@ -146,6 +146,14 @@
         async function sendForm(event, form) {
             event.preventDefault();
             const formData = new FormData(form);
+
+            // Convert FormData to an object for logging
+            const formDataObj = {};
+            formData.forEach((value, key) => {
+                formDataObj[key] = value;
+            });
+            console.log("Form data: ", formDataObj);
+
             const response = await fetch("index.php", {
                 method: "POST",
                 body: formData
