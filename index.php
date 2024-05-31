@@ -111,8 +111,9 @@
         .animals img,
         .sizes img {
             width: 200px;
-            height: auto;
+            height: 200px;
             margin-bottom: 10px;
+            object-fit: contain;
         }
 
         .nombreDueño,
@@ -313,7 +314,7 @@
             echo '</div>';
             echo '<div>';
             echo '<input type="radio" id="ambos" name="animal" value="ambos">';
-            echo '<label for="ambos"><img src="https://allpetsorganic.com/wp-content/uploads/2023/04/Pty-Category-List-Img-4.png" alt="Gato">Both</label>';
+            echo '<label for="ambos"><img src="https://allpetsorganic.com/wp-content/uploads/2023/05/Home-2-Banner.png" alt="Gato">Both</label>';
             echo '</div>';
             echo '</div>';
             echo '<input type="submit" class="boton_form" value="Send">';
@@ -335,7 +336,7 @@
         echo '</div>';
         echo '<div>';
         echo '<input type="radio" id="ambos" name="animal" value="ambos">';
-        echo '<label for="ambos"><img src="https://allpetsorganic.com/wp-content/uploads/2023/04/Pty-Category-List-Img-4.png" alt="Perro"></label>';
+        echo '<label for="ambos"><img src="https://allpetsorganic.com/wp-content/uploads/2023/05/Home-2-Banner.png" alt="Perro"></label>';
         echo '</div>';
         echo '</div>';
         echo '<input type="submit" class="boton_form" value="Send">';
