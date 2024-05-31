@@ -28,6 +28,7 @@
             justify-content: center;
             gap: 30px;
             margin-bottom: 30px;
+            flex-wrap: wrap;
         }
 
         label {
@@ -158,7 +159,7 @@
                 if (!isset($_POST['cantidad_perros'])) {
                     echo '<div class="container">';
                     echo '<h1 class="titulo">How many dogs do you have?</h1>';
-                    echo '<img src="/img/perro.png" alt="Perro" style="width:180px; margin-bottom: 20px;">';
+                    echo '<img src="https://allpetsorganic.com/wp-content/uploads/2023/04/Pty-Category-List-Img-3.png" alt="Perro" style="width:180px; margin-bottom: 20px;">';
                     echo '<form action="index.php" method="POST">';
                     echo '<input type="number" id="cantidad_perros" class="cantidad_perros" name="cantidad_perros" min="1" max="10"><br>';
                     echo '<input type="submit" class="boton_form" value="Send">';
@@ -172,15 +173,15 @@
                     echo '<div class="sizes">';
                     echo '<div>';
                     echo '<input type="radio" id="pequeño" name="tamaño" value="pequeño">';
-                    echo '<label for="pequeño"><img src="/img/small.png" alt="Perro Pequeño"><div class="size-label">Small</div></label>';
+                    echo '<label for="pequeño"><img src="https://allpetsorganic.com/wp-content/uploads/2024/04/33.png" alt="Perro Pequeño"><div class="size-label">Small</div></label>';
                     echo '</div>';
                     echo '<div>';
                     echo '<input type="radio" id="mediano" name="tamaño" value="mediano">';
-                    echo '<label for="mediano"><img src="/img/mediano.png" alt="Perro Mediano"><div class="size-label">Medium</div></label>';
+                    echo '<label for="mediano"><img src="https://allpetsorganic.com/wp-content/uploads/2024/04/11.png" alt="Perro Mediano"><div class="size-label">Medium</div></label>';
                     echo '</div>';
                     echo '<div>';
                     echo '<input type="radio" id="grande" name="tamaño" value="grande">';
-                    echo '<label for="grande"><img src="/img/big.png" alt="Perro Grande"><div class="size-label">Big</div></label>';
+                    echo '<label for="grande"><img src="https://allpetsorganic.com/wp-content/uploads/2024/04/22.png" alt="Perro Grande"><div class="size-label">Big</div></label>';
                     echo '</div>';
                     echo '</div>';
                     echo '<input type="submit" class="boton_form" value="Send">';
@@ -209,7 +210,7 @@
                 if (!isset($_POST['cantidad_gatos'])) {
                     echo '<div class="container">';
                     echo '<h1 class="titulo">How many cats do you have?</h1>';
-                    echo '<img src="/img/gato.png" alt="Gato" style="width:180px; margin-bottom: 20px;">';
+                    echo '<img src="https://allpetsorganic.com/wp-content/uploads/2023/04/Pty-Category-List-Img-2.png" alt="Gato" style="width:180px; margin-bottom: 20px;">';
                     echo '<form action="index.php" method="POST">';
                     echo '<input type="number" id="cantidad_gatos" class="cantidad_gatos" name="cantidad_gatos" min="1" max="10"><br>';
                     echo '<input type="submit" class="boton_form" value="Send">';
@@ -236,7 +237,7 @@
                 if (!isset($_POST['cantidad_perros'])) {
                     echo '<div class="container">';
                     echo '<h1 class="titulo">How many dogs do you have?</h1>';
-                    echo '<img src="/img/perro.png" alt="Perro" style="width:180px; margin-bottom: 20px;">';
+                    echo '<img src="https://allpetsorganic.com/wp-content/uploads/2023/04/Pty-Category-List-Img-3.png" alt="Perro" style="width:180px; margin-bottom: 20px;">';
                     echo '<form action="index.php" method="POST">';
                     echo '<input type="number" id="cantidad_perros" class="cantidad_perros" name="cantidad_perros" min="1" max="10"><br>';
                     echo '<input type="submit" class="boton_form" value="Send">';
@@ -250,15 +251,15 @@
                     echo '<div class="sizes">';
                     echo '<div>';
                     echo '<input type="radio" id="pequeño" name="tamaño" value="pequeño">';
-                    echo '<label for="pequeño"><img src="/img/small.png" alt="Perro Pequeño"><div class="size-label">Small</div></label>';
+                    echo '<label for="pequeño"><img src="https://allpetsorganic.com/wp-content/uploads/2024/04/33.png" alt="Perro Pequeño"><div class="size-label">Small</div></label>';
                     echo '</div>';
                     echo '<div>';
                     echo '<input type="radio" id="mediano" name="tamaño" value="mediano">';
-                    echo '<label for="mediano"><img src="/img/mediano.png" alt="Perro Mediano"><div class="size-label">Medium</div></label>';
+                    echo '<label for="mediano"><img src="https://allpetsorganic.com/wp-content/uploads/2024/04/11.png" alt="Perro Mediano"><div class="size-label">Medium</div></label>';
                     echo '</div>';
                     echo '<div>';
                     echo '<input type="radio" id="grande" name="tamaño" value="grande">';
-                    echo '<label for="grande"><img src="/img/big.png" alt="Perro Grande"><div class="size-label">Big</div></label>';
+                    echo '<label for="grande"><img src="https://allpetsorganic.com/wp-content/uploads/2024/04/22.png" alt="Perro Grande"><div class="size-label">Big</div></label>';
                     echo '</div>';
                     echo '</div>';
                     echo '<input type="submit" class="boton_form" value="Send">';
@@ -269,7 +270,7 @@
                 } elseif (!isset($_POST['cantidad_gatos'])) {
                     echo '<div class="container">';
                     echo '<h1 class="titulo">How many cats do you have?</h1>';
-                    echo '<img src="/img/gato.png" alt="Gato" style="width:180px; margin-bottom: 20px;">';
+                    echo '<img src="https://allpetsorganic.com/wp-content/uploads/2023/04/Pty-Category-List-Img-2.png" alt="Gato" style="width:180px; margin-bottom: 20px;">';
                     echo '<form action="index.php" method="POST">';
                     echo '<input type="number" id="cantidad_gatos" class="cantidad_gatos" name="cantidad_gatos" min="1" max="10"><br>';
                     echo '<input type="submit" class="boton_form" value="Send">';
@@ -304,15 +305,15 @@
             echo '<div class="animals">';
             echo '<div>';
             echo '<input type="radio" id="gato" name="animal" value="gato">';
-            echo '<label for="gato"><img src="/img/gato.png" alt="Gato">Cat</label>';
+            echo '<label for="gato"><img src="https://allpetsorganic.com/wp-content/uploads/2023/04/Pty-Category-List-Img-2.png" alt="Gato">Cat</label>';
             echo '</div>';
             echo '<div>';
             echo '<input type="radio" id="perro" name="animal" value="perro">';
-            echo '<label for="perro"><img src="/img/perro.png" alt="Perro">Dog</label>';
+            echo '<label for="perro"><img src="https://allpetsorganic.com/wp-content/uploads/2023/04/Pty-Category-List-Img-3.png" alt="Perro">Dog</label>';
             echo '</div>';
             echo '<div>';
             echo '<input type="radio" id="ambos" name="animal" value="ambos">';
-            echo '<label for="ambos"><img src="/img/perro.png" alt="Gato">Both</label>';
+            echo '<label for="ambos"><img src="https://allpetsorganic.com/wp-content/uploads/2023/04/Pty-Category-List-Img-4.png" alt="Gato">Both</label>';
             echo '</div>';
             echo '</div>';
             echo '<input type="submit" class="boton_form" value="Send">';
@@ -326,15 +327,15 @@
         echo '<div class="animals">';
         echo '<div>';
         echo '<input type="radio" id="gato" name="animal" value="gato">';
-        echo '<label for="gato"><img src="/img/gato.png" alt="Gato"></label>';
+        echo '<label for="gato"><img src="https://allpetsorganic.com/wp-content/uploads/2023/04/Pty-Category-List-Img-2.png" alt="Gato"></label>';
         echo '</div>';
         echo '<div>';
         echo '<input type="radio" id="perro" name="animal" value="perro">';
-        echo '<label for="perro"><img src="/img/perro.png" alt="Perro"></label>';
+        echo '<label for="perro"><img src="https://allpetsorganic.com/wp-content/uploads/2023/04/Pty-Category-List-Img-3.png" alt="Perro"></label>';
         echo '</div>';
         echo '<div>';
         echo '<input type="radio" id="ambos" name="animal" value="ambos">';
-        echo '<label for="ambos"><img src="/img/perro.png" alt="Perro"></label>';
+        echo '<label for="ambos"><img src="https://allpetsorganic.com/wp-content/uploads/2023/04/Pty-Category-List-Img-4.png" alt="Perro"></label>';
         echo '</div>';
         echo '</div>';
         echo '<input type="submit" class="boton_form" value="Send">';
